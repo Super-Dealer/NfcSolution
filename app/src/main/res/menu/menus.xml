@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/icons8_home_filled_100px"
+        android:title="Accueil" />
+    <item
+        android:id="@+id/nav_cart"
+        android:icon="@drawable/icons8_carte_64px"
+        android:title="Ma carte" />
+
+    <item
+        android:id="@+id/nav_pay"
+        android:icon="@drawable/icons8_pay_128px"
+        android:title="Pay" />
+
+    <item
+        android:id="@+id/nav_story"
+        android:icon="@drawable/icons8_activity_history_filled_50px"
+        android:title="Historique" />
+
+    <item
+        android:id="@+id/nav_profil"
+        android:icon="@drawable/icons8_user_male_circle_filled_100px_4"
+        android:title="Moi"/>
+</menu>
