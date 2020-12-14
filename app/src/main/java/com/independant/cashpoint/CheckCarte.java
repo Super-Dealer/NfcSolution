@@ -51,7 +51,7 @@ public class CheckCarte extends Fragment {
         return view;
     }
 
-   /*@Override
+  @Override
     protected void onNewIntent(Intent intent) {
         // Permet de notifier la reconnaissance d'un TAG NFC
         Toast.makeText(getActivity(), "NFC intent reçu!", Toast.LENGTH_LONG).show();
@@ -60,7 +60,7 @@ public class CheckCarte extends Fragment {
 
        super.onNewIntent(intent);
 
-    }*/
+    }
 
 
 
