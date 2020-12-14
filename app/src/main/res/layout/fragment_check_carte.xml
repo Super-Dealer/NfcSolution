@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CheckCarte">
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="90sp"
+        android:id="@+id/img_check"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50sp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/icons8_stack_104px"/>
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:gravity="center"
+        android:text = "Vos historiques de cartes scanées seront affichées ici. Quand vous scanner une carte, les données de transaction seront affichées ici."
+        android:layout_marginTop="150dp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment = "center"
+        android:textSize="16dp"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_menu_manage" />
+
+</FrameLayout>

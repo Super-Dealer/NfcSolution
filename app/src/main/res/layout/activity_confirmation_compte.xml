@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".login.ConfirmationCompte"
+    android:orientation="vertical">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorJaune"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmation"
+                android:layout_gravity="center"
+                tools:ignore="MissingPrefix"
+                android:textColor="@color/colorBlack"
+                android:textSize="20dp"/>
+
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:weightSum="1">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/cd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/code"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Code de confirmation"
+                android:inputType="text"
+                android:layout_marginHorizontal = "30dp"
+                android:maxLength="150"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="143dp"
+        android:layout_weight="0.39"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+
+        <Button
+            android:id="@+id/btnRegister2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/etAlamat"
+            android:layout_alignParentBottom="true"
+            android:layout_marginHorizontal="30dp"
+            android:layout_weight="0.50"
+            android:background="@color/colorJaune"
+            android:onClick="checkCode"
+            android:text="Confirmer"
+            android:textColor="@color/colorBlack" />
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lien"
+        android:layout_width = "match_parent"
+        android:layout_height = "30dp"
+        android:text = "Veuillez entrer le code de confirmation que nous avons envoyé par SMS.
+"
+        android:layout_marginHorizontal = "30dp"
+        android:linksClickable="true"
+        android:autoLink="web"
+        android:textAlignment = "center"
+        />
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+
+</LinearLayout>

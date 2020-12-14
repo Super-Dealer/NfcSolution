@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16px"
+    android:paddingLeft="16px"
+    android:paddingRight="16px"
+    android:paddingTop="16px"
+    android:background="@color/colorJaune"
+    tools:context=".MainActivity">
+
+    <!--<ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layoutDirection="inherit"
+        app:srcCompat="@mipmap/lukratus_launcher_round" />-->
+
+    <TextView
+    android:id="@+id/textViewRegister"
+    android:layout_width = "match_parent"
+    android:layout_height = "match_parent"
+    android:text = "CashPay"
+    android:layout_marginTop="560dp"
+    android:textColor="@color/colorBlack"
+    android:textAlignment = "center"
+    android:textSize="25dp"
+    />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Tous droits réservés"
+        android:layout_marginTop="590dp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment = "center"
+        android:textSize="14dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhite"
+    tools:context=".HomeActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/effet"
+        android:theme="@style/AppTheme2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            android:background="@color/colorJaune"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            tools:theme="@style/AppTheme2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="CashPay"
+                android:layout_gravity="left"
+                tools:ignore="MissingPrefix"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp"
+                android:layout_gravity="right"
+
+                android:layout_marginRight="8dp">
+
+
+                <TextView
+                    android:id="@+id/taux"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textStyle="normal"
+                    android:textColor="@color/colorBlack"
+                    android:textSize="20dp"
+                    android:text="0$:0000Fc"/>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/main_nav"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorJaune"
+        app:itemIconTint="@color/menu_color"
+        app:itemTextColor="@color/menu_color"
+        app:menu="@menu/menus" />
+
+    <FrameLayout
+        android:id="@+id/main_fram"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_above="@id/main_nav"
+        android:layout_marginTop="55dp"
+        >
+
+
+    </FrameLayout>
+
+
+</RelativeLayout>

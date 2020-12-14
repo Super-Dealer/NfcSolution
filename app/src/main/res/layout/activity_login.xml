@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_background"
+    tools:context=".login.login">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20sp"
+        android:layout_marginBottom="1dp"
+        android:fontFamily="normal"
+        android:paddingVertical="18dp"
+        android:text="CashPay"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="36sp" />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_marginHorizontal = "30dp"
+        android:layout_height = "wrap_content"
+        android:text = "Téléphone"
+        android:textColor = "@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+
+        />
+    <EditText
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:id="@+id/telephone"
+        android:hint = "Téléphone"
+        android:inputType="number"
+        android:layout_marginHorizontal = "30dp"
+        />
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_marginHorizontal = "30dp"
+        android:layout_height = "wrap_content"
+        android:text = "Mot de passe"
+        android:textColor = "@color/colorWhite"
+        android:backgroundTint="@color/colorWhite"
+        />
+    <EditText
+        android:id="@+id/pwd"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:hint = "******************"
+        android:inputType = "textPassword"
+        android:paddingHorizontal = "12dp"
+        android:paddingVertical = "20dp"
+        android:layout_marginHorizontal = "30dp"
+        />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Connexion"
+        android:layout_marginHorizontal = "30dp"
+        android:layout_marginVertical = "20dp"
+        android:background = "@drawable/btn_design"
+        android:textColor = "@color/colorWhite"
+        android:onClick="Login"
+        />
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Créer un compte"
+        android:layout_marginHorizontal = "30dp"
+        android:textAlignment = "center"
+        android:onClick="gotoInscription"
+        android:textColor="@color/colorWhite"
+        android:background="@drawable/effet"
+        />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Mot de passe oublié ?"
+        android:layout_marginHorizontal = "30dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment = "center"
+        />
+
+
+    <LinearLayout
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:background="@drawable/icons8_google_logo_32px"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageButton
+                android:layout_marginRight="15dp"
+                android:background="@drawable/icons8_twitter_32px"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+            <ImageButton
+                android:background="@drawable/icons8_facebook_50px"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "CashPay"
+        android:layout_marginTop="90dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment = "center"
+        android:textSize="25dp"
+        />
+
+    <TextView
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:text = "Tous droits réservés"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/colorWhite"
+        android:textAlignment = "center"
+        android:textSize="14dp"
+        />
+
+
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+</LinearLayout>

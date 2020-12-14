@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/effet"
+    tools:context=".ManagerActivity">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/effet"
+        android:theme="@style/AppTheme2">
+
+        <androidx.appcompat.widget.Toolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="?attr/actionBarSize"
+            tools:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+            android:background="@color/colorJaune"
+            tools:theme="@style/AppTheme2">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingRight="16dp"
+                android:paddingBottom="16dp"
+                android:paddingTop="16dp">
+
+                <ImageView
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/icons8_left_48px_1"
+                    android:onClick="checkReturn"
+                    />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Manager CashPay"
+                android:layout_gravity="left"
+                tools:ignore="MissingPrefix"
+                android:textColor="@color/colorBlack"
+                android:textSize="20sp"/>
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:onClick="myCart"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            android:paddingLeft="25sp">
+            <ImageView
+
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/icons8_carte_64px"/>
+
+            <TextView
+                android:id="@+id/my_carte"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="Ma carte"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/l_recharge"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:onClick="popupRecharge"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            android:paddingLeft="25sp">
+
+            <ImageView
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/icons8_park_and_charge_64px"/>
+            <TextView
+                android:id="@+id/choix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="Recharge"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            android:paddingLeft="25sp">
+
+            <ImageView
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/icons8_user_male_circle_filled_50px_2"/>
+            <TextView
+                android:id="@+id/my_profil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="Mon Profil"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5sp"
+            android:paddingLeft="25sp">
+
+            <ImageView
+                android:layout_width="24sp"
+                android:layout_height="24sp"
+                android:src="@drawable/icons8_security_checked_24px_2"/>
+            <TextView
+                android:id="@+id/security"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="normal"
+                android:layout_gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:textSize="16dp"
+                android:textColor="@color/colorBlack"
+                android:text="Sécurité du compte"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+    <TextView
+        android:id="@+id/textViewRegister"
+        android:layout_width = "match_parent"
+        android:layout_height = "match_parent"
+        android:text = "CashPay"
+        android:layout_marginTop="160dp"
+        android:textColor="@color/colorBlack"
+        android:textAlignment = "center"
+        android:textSize="25dp"
+        />
+
+
+</LinearLayout>
